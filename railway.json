@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "n8n start",
+    "restartPolicyType": "ON_FAILURE",
+    "healthCheckPath": "/healthz",
+    "healthCheckTimeout": 300
+  }
+}
